@@ -6,20 +6,16 @@ const schemaProperties = {
   minlength: 1,
 };
 
-
+// generated from https://transform.now.sh/json-to-mongoose
 const MovieSchema = new mongoose.Schema({
-  name: schemaProperties,
-  schedules: [
-    {
-      data: schemaProperties,
-      playingAt: [
-        {
-          name: schemaProperties,
-          showTimes: [schemaProperties],
-        },
-      ],
-    },
-  ],
+  name: {
+    type: 'String',
+  },
+  schedule: {
+    type: [
+      'Mixed',
+    ],
+  },
 });
 
 const Movie = mongoose.model('Movie', MovieSchema);
