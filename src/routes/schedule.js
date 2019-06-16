@@ -17,7 +17,7 @@ scheduleRouter.get('/all', async (req, res) => {
 // get schedule by cinema id
 // 0 for star cineplex
 // 1 for blockbuster
-scheduleRouter.get('/:id', async (req, res) => {
+scheduleRouter.get('/cinema/:id', async (req, res) => {
   const { id } = req.params;
   const schedules = await fetchScheduleByCinemaId(id);
   res.send(schedules);
