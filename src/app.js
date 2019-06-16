@@ -10,7 +10,7 @@ require('./config/config');
 require('./db/db');
 
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 
 const app = express();
 
@@ -23,16 +23,25 @@ app.use(cors());
 // routers
 app.use('/core/v1/schedule', schedule);
 
-// root route
-app.get('/core/v1/', (req, res) => {
+// index
+app.get('/', (req, res) => {
   res.status(200).send({
     msg: 'Showkokohon-Core-API',
     sentAt: Date(),
   });
 });
 
+// root route
+app.get('/core/v1/', (req, res) => {
+  res.status(200).send({
+    msg: 'Showkokohon-Core-API',
+    version: 'v1',
+    sentAt: Date(),
+  });
+});
+
 app.listen(port, async () => {
-  const status = await populateDb(false);
+  const status = await populateDb(true);
   console.log(`server running @ ${port}`);
   console.log(status);
 });

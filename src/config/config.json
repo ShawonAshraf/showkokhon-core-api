@@ -1,0 +1,10 @@
+{
+  "test": {
+    "MONGODB_URI": "mongodb://localhost:27017/ShowKokhonTest",
+    "API_END": "http://localhost:8080/scraper/v1/schedule/all"
+  },
+  "development": {
+    "MONGODB_URI": "mongodb://localhost:27017/ShowKokhonDev",
+    "API_END": "http://localhost:8080/scraper/v1/schedule/all"
+  }
+}
