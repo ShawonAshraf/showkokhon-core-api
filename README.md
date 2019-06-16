@@ -4,7 +4,7 @@
 Core API for ShowKokhon Service.
 
 ## Running locally
-- Start your local `mongodb` server. If you want, you can use cloud hosted mongodb instances as
+- Start your local `mongodb` server. If you want, you can use cloud hosted `mongodb` instances as
 well. Just add a `config.json` file in `src/config` with the following properties and replace the
 `MONGODB_URI` with the hosted instance URI you want to use.
 
@@ -42,7 +42,7 @@ yarn run watch
 Fetches all schedule from the database.
 
 ### GET /schedule/:cinemaId
-Fetches schedule by cinemaId.
+Fetches schedule by `cinemaId`.
 
 _Params_
 - 0 for Star Cineplex.
@@ -52,7 +52,7 @@ _Params_
 Fetches schedule for cinema branches as well.
 
 _Params_
-- `cinemId` as mentioned above.
+- `cinemaId` as mentioned above.
 - `locationId` 0 for Bashundhara City, 1 for Shimanto Shambhar.
 
 ## License
