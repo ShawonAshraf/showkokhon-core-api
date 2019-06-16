@@ -1,0 +1,14 @@
+image: node:latest
+
+stages:
+- production
+
+production:
+  type: deploy
+  stage: production
+  image: ruby:latest
+  script:
+  - gem install dpl
+  - dpl --provider=heroku --app=$DPL_APP_NAME --api-key=$DPL_TOKEN
+  only:
+  - master
