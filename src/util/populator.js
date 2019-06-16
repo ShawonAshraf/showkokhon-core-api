@@ -16,7 +16,6 @@ const populateDb = async (force) => {
       const response = await axios.get(process.env.API_END);
       const schedules = response.data.movies;
 
-      console.log('populating db');
       schedules.forEach((element) => {
         const entry = new Movie(element);
         entry.save().then(movie => movie, err => err);
