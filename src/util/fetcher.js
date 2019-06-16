@@ -1,5 +1,3 @@
-const { ObjectId } = require('mongodb');
-
 const Movie = require('../models/movie');
 
 const locations = [
@@ -8,10 +6,26 @@ const locations = [
 ];
 
 const fetchAllSchedule = async () => {
-  const schedules = await Movie.find({});
-  return schedules;
+  const docs = await Movie.find({});
+  return docs;
+};
+
+const fetchScheduleByCinemaId = async (cinemaId) => {
+  const id = parseInt(cinemaId, 0);
+  const docs = await Movie.find({ 'schedule.playingAt.cinemaId': id });
+  console.log(docs);
+  return docs;
+};
+
+const fetchStarCineplexScheduleByLocationId = async (locationId) => {
+  const location = locations[locationId];
+  console.log(location);
+  const docs = await Movie.find({ 'schedule.playingAt.locationName': location });
+  return docs;
 };
 
 module.exports = {
   fetchAllSchedule,
+  fetchScheduleByCinemaId,
+  fetchStarCineplexScheduleByLocationId,
 };
