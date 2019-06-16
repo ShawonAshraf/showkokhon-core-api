@@ -13,7 +13,7 @@
     "morgan": "^1.9.1"
   },
   "scripts": {
-    "start": "node src/server.js",
+    "start": "node src/app.js",
     "watch": "export NODE_ENV=development && nodemon src/server.js"
   },
   "devDependencies": {
