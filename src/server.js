@@ -33,6 +33,6 @@ app.get('/core/v1/', (req, res) => {
 
 app.listen(port, async () => {
   const status = await populateDb(false);
-  console.log(`server runnung @ ${port}`);
+  console.log(`server running @ ${port}`);
   console.log(status);
 });
