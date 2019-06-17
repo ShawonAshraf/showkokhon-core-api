@@ -40,8 +40,17 @@ app.get('/core/v1/', (req, res) => {
   });
 });
 
+// populator
+// fetches from scraper and populates db beforehand
+app.get('/core/v1/populate', async (req, res) => {
+  try {
+    const status = await populateDb();
+    res.send(status);
+  } catch (e) {
+    res.send({ error: e });
+  }
+});
+
 app.listen(port, async () => {
-  const status = await populateDb(true);
   console.log(`server running @ ${port}`);
-  console.log(status);
 });

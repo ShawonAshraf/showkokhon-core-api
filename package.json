@@ -14,8 +14,8 @@
     "remove": "^0.1.5"
   },
   "engines": {
-    "node": "10.15.3",
-    "yarn": "1.15.2"
+    "node": "10.16.0",
+    "yarn": "1.17.0"
   },
   "scripts": {
     "start": "node src/app.js",
