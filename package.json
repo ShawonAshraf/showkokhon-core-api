@@ -21,9 +21,9 @@
   "scripts": {
     "start": "node src/app.js",
     "watch": "export NODE_ENV=development && nodemon src/app.js",
-    "test": "export NODE_ENV=test && mocha ./**/*.test.js",
+    "test": "export NODE_ENV=test && mocha ./**/*.test.js --timeout 20000",
     "test-watch": "export NODE_ENV=test && nodemon --exec \"npm test\"",
-    "travis-test": "export NODE_ENV=travis && mocha ./**/*.test.js"
+    "travis-test": "export NODE_ENV=travis && mocha ./**/*.test.js --timeout 20000"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
