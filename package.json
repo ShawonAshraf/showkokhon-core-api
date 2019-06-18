@@ -20,7 +20,10 @@
   },
   "scripts": {
     "start": "node src/app.js",
-    "watch": "export NODE_ENV=development && nodemon src/app.js"
+    "watch": "export NODE_ENV=development && nodemon src/app.js",
+    "test": "export NODE_ENV=test && mocha ./**/*.test.js",
+    "test-watch": "export NODE_ENV=test && nodemon --exec \"npm test\"",
+    "travis-test": "export NODE_ENV=travis && mocha ./**/*.test.js"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
