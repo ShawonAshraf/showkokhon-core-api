@@ -10,6 +10,10 @@ require('./config/config');
 require('./db/db');
 
 
+// cron job
+require('./util/cronjob');
+
+
 const port = process.env.PORT || 4000;
 
 const app = express();
