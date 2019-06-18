@@ -1,7 +1,7 @@
 const dummy = require('./dummy');
 const Movie = require('../src/models/movie');
 
-const movies = dummy.movies;
+const { movies } = dummy;
 
 const populate = (done) => {
   movies.forEach((movie) => {
