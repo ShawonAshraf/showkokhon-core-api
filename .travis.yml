@@ -1,5 +1,6 @@
 image: node:latest
 
 script:
-  - yarn run travis-test
+  - yarn install
+  - yarn run test-cd
 
