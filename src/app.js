@@ -57,3 +57,5 @@ app.get('/core/v1/populate', async (req, res) => {
 app.listen(port, async () => {
   console.log(`server running @ ${port}`);
 });
+
+module.exports = app;
