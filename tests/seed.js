@@ -8,7 +8,7 @@ const populate = (done) => {
     const entry = new Movie(movie);
     entry.save()
       .then(() => entry)
-      .catch(e => done(e));
+      .catch(e => e);
   });
 
   done();
