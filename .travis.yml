@@ -1,6 +1,5 @@
 image: node:latest
 
 script:
-  - yarn install
   - yarn run test-cd
 
