@@ -14,10 +14,6 @@
     "node-cron": "^2.0.3",
     "remove": "^0.1.5"
   },
-  "engines": {
-    "node": "10.16.0",
-    "yarn": "1.17.0"
-  },
   "scripts": {
     "start": "node src/app.js",
     "watch": "export NODE_ENV=development && nodemon src/app.js",
