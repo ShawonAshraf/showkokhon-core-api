@@ -20,6 +20,7 @@ describe('GET /', () => {
         const { msg, sentAt } = res.body;
 
         expect(msg).toBe('Showkokohon-Core-API');
+        expect(sentAt).toExist();
         done();
       })
       .catch(e => done(e));
@@ -53,7 +54,7 @@ describe('GET /core/v1/schedule/', () => {
       .catch(e => done(e));
   });
 
-  it('should get schedule by cinemaId', (done) => {
+  it('should get star cineplex schedule by cinemaId', (done) => {
     request(app)
       .get('/core/v1/schedule/cinema/0')
       .expect(200)
@@ -62,6 +63,20 @@ describe('GET /core/v1/schedule/', () => {
         const { cinemaId } = schedule[0].playingAt[0];
 
         expect(cinemaId).toEqual(0);
+        done();
+      })
+      .catch(e => done(e));
+  });
+
+  it('should get blockbuster cinemas schedule by cinemaId', (done) => {
+    request(app)
+      .get('/core/v1/schedule/cinema/1')
+      .expect(200)
+      .expect((res) => {
+        const { schedule } = res.body[0];
+        const { cinemaId } = schedule[0].playingAt[0];
+
+        expect(cinemaId).toEqual(1);
         done();
       })
       .catch(e => done(e));

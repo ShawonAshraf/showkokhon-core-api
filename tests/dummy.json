@@ -1,9 +1,10 @@
 {
 	"STATUS_CODE": 200,
-	"SENT_AT": "Tue Jun 18 07:47:41 UTC 2019",
+	"SENT_AT": "Tue Jun 18 16:14:58 UTC 2019",
 	"movies": [
 		{
-			"name": "Aabar Boshonto(2D)",
+			"name": "Avengers: Endgame",
+			"mediaType": "3D",
 			"schedule": [
 				{
 					"date": "Tuesday, June 18, 2019",
@@ -11,11 +12,12 @@
 						{
 							"cinemaId": 0,
 							"locationName": "Bashundhara Shopping Mall, Panthapath",
-							"showTimes": {
-								"showTimes": [
-									"01:40 PM"
-								]
-							}
+							"showTimes": [
+								"11:20 AM",
+								"03:00 PM",
+								"04:00 PM",
+								"06:40 PM"
+							]
 						}
 					]
 				},
@@ -25,11 +27,11 @@
 						{
 							"cinemaId": 0,
 							"locationName": "Bashundhara Shopping Mall, Panthapath",
-							"showTimes": {
-								"showTimes": [
-									"01:40 PM"
-								]
-							}
+							"showTimes": [
+								"03:00 PM",
+								"04:00 PM",
+								"06:40 PM"
+							]
 						}
 					]
 				},
@@ -39,18 +41,21 @@
 						{
 							"cinemaId": 0,
 							"locationName": "Bashundhara Shopping Mall, Panthapath",
-							"showTimes": {
-								"showTimes": [
-									"01:40 PM"
-								]
-							}
+							"showTimes": [
+								"11:20 AM",
+								"03:00 PM",
+								"04:00 PM",
+								"06:40 PM"
+							]
 						}
 					]
 				}
-			]
+			],
+			"imageUrl": ""
 		},
 		{
-			"name": "Aladdin (3D)",
+			"name": "Aabar Boshonto",
+			"mediaType": "2D",
 			"schedule": [
 				{
 					"date": "Tuesday, June 18, 2019",
@@ -58,14 +63,9 @@
 						{
 							"cinemaId": 0,
 							"locationName": "Bashundhara Shopping Mall, Panthapath",
-							"showTimes": {
-								"showTimes": [
-									"11:00 AM",
-									"01:50 PM",
-									"04:40 PM",
-									"07:30 PM"
-								]
-							}
+							"showTimes": [
+								"01:40 PM"
+							]
 						}
 					]
 				},
@@ -75,13 +75,9 @@
 						{
 							"cinemaId": 0,
 							"locationName": "Bashundhara Shopping Mall, Panthapath",
-							"showTimes": {
-								"showTimes": [
-									"01:50 PM",
-									"04:40 PM",
-									"07:30 PM"
-								]
-							}
+							"showTimes": [
+								"01:40 PM"
+							]
 						}
 					]
 				},
@@ -91,19 +87,18 @@
 						{
 							"cinemaId": 0,
 							"locationName": "Bashundhara Shopping Mall, Panthapath",
-							"showTimes": {
-								"showTimes": [
-									"11:00 AM",
-									"01:50 PM"
-								]
-							}
+							"showTimes": [
+								"01:40 PM"
+							]
 						}
 					]
 				}
-			]
+			],
+			"imageUrl": ""
 		},
 		{
-			"name": "Nolok (2D)",
+			"name": "Godzilla: King of the Monsters",
+			"mediaType": "3D",
 			"schedule": [
 				{
 					"date": "Tuesday, June 18, 2019",
@@ -111,12 +106,12 @@
 						{
 							"cinemaId": 0,
 							"locationName": "Bashundhara Shopping Mall, Panthapath",
-							"showTimes": {
-								"showTimes": [
-									"11:00 AM",
-									"04:30 PM"
-								]
-							}
+							"showTimes": [
+								"11:10 AM",
+								"02:00 PM",
+								"04:40 PM",
+								"07:20 PM"
+							]
 						}
 					]
 				},
@@ -126,11 +121,11 @@
 						{
 							"cinemaId": 0,
 							"locationName": "Bashundhara Shopping Mall, Panthapath",
-							"showTimes": {
-								"showTimes": [
-									"04:30 PM"
-								]
-							}
+							"showTimes": [
+								"02:00 PM",
+								"04:40 PM",
+								"07:20 PM"
+							]
 						}
 					]
 				},
@@ -140,19 +135,21 @@
 						{
 							"cinemaId": 0,
 							"locationName": "Bashundhara Shopping Mall, Panthapath",
-							"showTimes": {
-								"showTimes": [
-									"11:00 AM",
-									"04:30 PM"
-								]
-							}
+							"showTimes": [
+								"11:10 AM",
+								"02:00 PM",
+								"04:40 PM",
+								"07:20 PM"
+							]
 						}
 					]
 				}
-			]
+			],
+			"imageUrl": ""
 		},
 		{
-			"name": "Dark Phoenix (3D)",
+			"name": "Dark Phoenix",
+			"mediaType": "3D",
 			"schedule": [
 				{
 					"date": "Tuesday, June 18, 2019",
@@ -160,11 +157,9 @@
 						{
 							"cinemaId": 0,
 							"locationName": "Bashundhara Shopping Mall, Panthapath",
-							"showTimes": {
-								"showTimes": [
-									"11:15 AM"
-								]
-							}
+							"showTimes": [
+								"11:15 AM"
+							]
 						}
 					]
 				},
@@ -174,12 +169,10 @@
 						{
 							"cinemaId": 0,
 							"locationName": "Bashundhara Shopping Mall, Panthapath",
-							"showTimes": {
-								"showTimes": [
-									"04:20 PM",
-									"06:50 PM"
-								]
-							}
+							"showTimes": [
+								"04:20 PM",
+								"06:50 PM"
+							]
 						}
 					]
 				},
@@ -189,20 +182,20 @@
 						{
 							"cinemaId": 0,
 							"locationName": "Bashundhara Shopping Mall, Panthapath",
-							"showTimes": {
-								"showTimes": [
-									"11:15 AM",
-									"04:20 PM",
-									"06:50 PM"
-								]
-							}
+							"showTimes": [
+								"11:15 AM",
+								"04:20 PM",
+								"06:50 PM"
+							]
 						}
 					]
 				}
-			]
+			],
+			"imageUrl": ""
 		},
 		{
-			"name": "Godzilla: King of the Monsters (3D)",
+			"name": "Nolok",
+			"mediaType": "2D",
 			"schedule": [
 				{
 					"date": "Tuesday, June 18, 2019",
@@ -210,14 +203,10 @@
 						{
 							"cinemaId": 0,
 							"locationName": "Bashundhara Shopping Mall, Panthapath",
-							"showTimes": {
-								"showTimes": [
-									"11:10 AM",
-									"02:00 PM",
-									"04:40 PM",
-									"07:20 PM"
-								]
-							}
+							"showTimes": [
+								"11:00 AM",
+								"04:30 PM"
+							]
 						}
 					]
 				},
@@ -227,13 +216,9 @@
 						{
 							"cinemaId": 0,
 							"locationName": "Bashundhara Shopping Mall, Panthapath",
-							"showTimes": {
-								"showTimes": [
-									"02:00 PM",
-									"04:40 PM",
-									"07:20 PM"
-								]
-							}
+							"showTimes": [
+								"04:30 PM"
+							]
 						}
 					]
 				},
@@ -243,21 +228,19 @@
 						{
 							"cinemaId": 0,
 							"locationName": "Bashundhara Shopping Mall, Panthapath",
-							"showTimes": {
-								"showTimes": [
-									"11:10 AM",
-									"02:00 PM",
-									"04:40 PM",
-									"07:20 PM"
-								]
-							}
+							"showTimes": [
+								"11:00 AM",
+								"04:30 PM"
+							]
 						}
 					]
 				}
-			]
+			],
+			"imageUrl": ""
 		},
 		{
-			"name": "Password (2D)",
+			"name": "Aladdin",
+			"mediaType": "3D",
 			"schedule": [
 				{
 					"date": "Tuesday, June 18, 2019",
@@ -265,12 +248,12 @@
 						{
 							"cinemaId": 0,
 							"locationName": "Bashundhara Shopping Mall, Panthapath",
-							"showTimes": {
-								"showTimes": [
-									"01:50 PM",
-									"07:10 PM"
-								]
-							}
+							"showTimes": [
+								"11:00 AM",
+								"01:50 PM",
+								"04:40 PM",
+								"07:30 PM"
+							]
 						}
 					]
 				},
@@ -280,12 +263,11 @@
 						{
 							"cinemaId": 0,
 							"locationName": "Bashundhara Shopping Mall, Panthapath",
-							"showTimes": {
-								"showTimes": [
-									"01:50 PM",
-									"07:10 PM"
-								]
-							}
+							"showTimes": [
+								"01:50 PM",
+								"04:40 PM",
+								"07:30 PM"
+							]
 						}
 					]
 				},
@@ -295,19 +277,19 @@
 						{
 							"cinemaId": 0,
 							"locationName": "Bashundhara Shopping Mall, Panthapath",
-							"showTimes": {
-								"showTimes": [
-									"01:50 PM",
-									"07:10 PM"
-								]
-							}
+							"showTimes": [
+								"11:00 AM",
+								"01:50 PM"
+							]
 						}
 					]
 				}
-			]
+			],
+			"imageUrl": ""
 		},
 		{
-			"name": "Avengers: Endgame (3D)",
+			"name": "Password",
+			"mediaType": "2D",
 			"schedule": [
 				{
 					"date": "Tuesday, June 18, 2019",
@@ -315,14 +297,10 @@
 						{
 							"cinemaId": 0,
 							"locationName": "Bashundhara Shopping Mall, Panthapath",
-							"showTimes": {
-								"showTimes": [
-									"11:20 AM",
-									"03:00 PM",
-									"04:00 PM",
-									"06:40 PM"
-								]
-							}
+							"showTimes": [
+								"01:50 PM",
+								"07:10 PM"
+							]
 						}
 					]
 				},
@@ -332,13 +310,10 @@
 						{
 							"cinemaId": 0,
 							"locationName": "Bashundhara Shopping Mall, Panthapath",
-							"showTimes": {
-								"showTimes": [
-									"03:00 PM",
-									"04:00 PM",
-									"06:40 PM"
-								]
-							}
+							"showTimes": [
+								"01:50 PM",
+								"07:10 PM"
+							]
 						}
 					]
 				},
@@ -348,21 +323,19 @@
 						{
 							"cinemaId": 0,
 							"locationName": "Bashundhara Shopping Mall, Panthapath",
-							"showTimes": {
-								"showTimes": [
-									"11:20 AM",
-									"03:00 PM",
-									"04:00 PM",
-									"06:40 PM"
-								]
-							}
+							"showTimes": [
+								"01:50 PM",
+								"07:10 PM"
+							]
 						}
 					]
 				}
-			]
+			],
+			"imageUrl": ""
 		},
 		{
-			"name": "John Wick: Chapter 3 - Parabellum (2D)",
+			"name": "John Wick: Chapter 3 - Parabellum",
+			"mediaType": "2D",
 			"schedule": [
 				{
 					"date": "Tuesday, June 18, 2019",
@@ -370,13 +343,11 @@
 						{
 							"cinemaId": 0,
 							"locationName": "Bashundhara Shopping Mall, Panthapath",
-							"showTimes": {
-								"showTimes": [
-									"10:40 AM",
-									"01:40 PM",
-									"07:30 PM"
-								]
-							}
+							"showTimes": [
+								"10:40 AM",
+								"01:40 PM",
+								"07:30 PM"
+							]
 						}
 					]
 				},
@@ -386,12 +357,10 @@
 						{
 							"cinemaId": 0,
 							"locationName": "Bashundhara Shopping Mall, Panthapath",
-							"showTimes": {
-								"showTimes": [
-									"01:40 PM",
-									"07:30 PM"
-								]
-							}
+							"showTimes": [
+								"01:40 PM",
+								"07:30 PM"
+							]
 						}
 					]
 				},
@@ -401,20 +370,20 @@
 						{
 							"cinemaId": 0,
 							"locationName": "Bashundhara Shopping Mall, Panthapath",
-							"showTimes": {
-								"showTimes": [
-									"10:40 AM",
-									"01:40 PM",
-									"07:30 PM"
-								]
-							}
+							"showTimes": [
+								"10:40 AM",
+								"01:40 PM",
+								"07:30 PM"
+							]
 						}
 					]
 				}
-			]
+			],
+			"imageUrl": ""
 		},
 		{
-			"name": "Aladdin (3D)",
+			"name": "Avengers: Endgame",
+			"mediaType": "3D",
 			"schedule": [
 				{
 					"date": "Tuesday, June 18, 2019",
@@ -422,14 +391,10 @@
 						{
 							"cinemaId": 0,
 							"locationName": "Shimanto Shambhar, Dhanmondi 2",
-							"showTimes": {
-								"showTimes": [
-									"11:00 AM",
-									"01:50 PM",
-									"04:30 PM",
-									"07:10 PM"
-								]
-							}
+							"showTimes": [
+								"12:50 PM",
+								"06:50 PM"
+							]
 						}
 					]
 				},
@@ -439,14 +404,10 @@
 						{
 							"cinemaId": 0,
 							"locationName": "Shimanto Shambhar, Dhanmondi 2",
-							"showTimes": {
-								"showTimes": [
-									"11:00 AM",
-									"01:50 PM",
-									"04:30 PM",
-									"07:10 PM"
-								]
-							}
+							"showTimes": [
+								"12:50 PM",
+								"06:50 PM"
+							]
 						}
 					]
 				},
@@ -456,21 +417,19 @@
 						{
 							"cinemaId": 0,
 							"locationName": "Shimanto Shambhar, Dhanmondi 2",
-							"showTimes": {
-								"showTimes": [
-									"11:00 AM",
-									"01:50 PM",
-									"04:30 PM",
-									"07:10 PM"
-								]
-							}
+							"showTimes": [
+								"12:50 PM",
+								"06:50 PM"
+							]
 						}
 					]
 				}
-			]
+			],
+			"imageUrl": ""
 		},
 		{
-			"name": "John Wick: Chapter 3 - Parabellum(2D)",
+			"name": "Godzilla: King of the Monsters",
+			"mediaType": "3D",
 			"schedule": [
 				{
 					"date": "Tuesday, June 18, 2019",
@@ -478,12 +437,10 @@
 						{
 							"cinemaId": 0,
 							"locationName": "Shimanto Shambhar, Dhanmondi 2",
-							"showTimes": {
-								"showTimes": [
-									"11:20 AM",
-									"04:45 PM"
-								]
-							}
+							"showTimes": [
+								"02:00 PM",
+								"07:30 PM"
+							]
 						}
 					]
 				},
@@ -493,12 +450,10 @@
 						{
 							"cinemaId": 0,
 							"locationName": "Shimanto Shambhar, Dhanmondi 2",
-							"showTimes": {
-								"showTimes": [
-									"11:20 AM",
-									"04:45 PM"
-								]
-							}
+							"showTimes": [
+								"02:00 PM",
+								"07:30 PM"
+							]
 						}
 					]
 				},
@@ -508,19 +463,19 @@
 						{
 							"cinemaId": 0,
 							"locationName": "Shimanto Shambhar, Dhanmondi 2",
-							"showTimes": {
-								"showTimes": [
-									"11:20 AM",
-									"04:45 PM"
-								]
-							}
+							"showTimes": [
+								"02:00 PM",
+								"07:30 PM"
+							]
 						}
 					]
 				}
-			]
+			],
+			"imageUrl": ""
 		},
 		{
-			"name": "Dark Phoenix (3D)",
+			"name": "Dark Phoenix",
+			"mediaType": "3D",
 			"schedule": [
 				{
 					"date": "Tuesday, June 18, 2019",
@@ -528,12 +483,10 @@
 						{
 							"cinemaId": 0,
 							"locationName": "Shimanto Shambhar, Dhanmondi 2",
-							"showTimes": {
-								"showTimes": [
-									"10:30 AM",
-									"04:25 PM"
-								]
-							}
+							"showTimes": [
+								"10:30 AM",
+								"04:25 PM"
+							]
 						}
 					]
 				},
@@ -543,12 +496,10 @@
 						{
 							"cinemaId": 0,
 							"locationName": "Shimanto Shambhar, Dhanmondi 2",
-							"showTimes": {
-								"showTimes": [
-									"10:30 AM",
-									"04:25 PM"
-								]
-							}
+							"showTimes": [
+								"10:30 AM",
+								"04:25 PM"
+							]
 						}
 					]
 				},
@@ -558,19 +509,19 @@
 						{
 							"cinemaId": 0,
 							"locationName": "Shimanto Shambhar, Dhanmondi 2",
-							"showTimes": {
-								"showTimes": [
-									"10:30 AM",
-									"04:25 PM"
-								]
-							}
+							"showTimes": [
+								"10:30 AM",
+								"04:25 PM"
+							]
 						}
 					]
 				}
-			]
+			],
+			"imageUrl": ""
 		},
 		{
-			"name": "Godzilla: King of the Monsters(3D)",
+			"name": "Aladdin",
+			"mediaType": "3D",
 			"schedule": [
 				{
 					"date": "Tuesday, June 18, 2019",
@@ -578,12 +529,12 @@
 						{
 							"cinemaId": 0,
 							"locationName": "Shimanto Shambhar, Dhanmondi 2",
-							"showTimes": {
-								"showTimes": [
-									"02:00 PM",
-									"07:30 PM"
-								]
-							}
+							"showTimes": [
+								"11:00 AM",
+								"01:50 PM",
+								"04:30 PM",
+								"07:10 PM"
+							]
 						}
 					]
 				},
@@ -593,12 +544,12 @@
 						{
 							"cinemaId": 0,
 							"locationName": "Shimanto Shambhar, Dhanmondi 2",
-							"showTimes": {
-								"showTimes": [
-									"02:00 PM",
-									"07:30 PM"
-								]
-							}
+							"showTimes": [
+								"11:00 AM",
+								"01:50 PM",
+								"04:30 PM",
+								"07:10 PM"
+							]
 						}
 					]
 				},
@@ -608,19 +559,21 @@
 						{
 							"cinemaId": 0,
 							"locationName": "Shimanto Shambhar, Dhanmondi 2",
-							"showTimes": {
-								"showTimes": [
-									"02:00 PM",
-									"07:30 PM"
-								]
-							}
+							"showTimes": [
+								"11:00 AM",
+								"01:50 PM",
+								"04:30 PM",
+								"07:10 PM"
+							]
 						}
 					]
 				}
-			]
+			],
+			"imageUrl": ""
 		},
 		{
-			"name": "Avengers: Endgame (3D)",
+			"name": "John Wick: Chapter 3 - Parabellum",
+			"mediaType": "2D",
 			"schedule": [
 				{
 					"date": "Tuesday, June 18, 2019",
@@ -628,12 +581,10 @@
 						{
 							"cinemaId": 0,
 							"locationName": "Shimanto Shambhar, Dhanmondi 2",
-							"showTimes": {
-								"showTimes": [
-									"12:50 PM",
-									"06:50 PM"
-								]
-							}
+							"showTimes": [
+								"11:20 AM",
+								"04:45 PM"
+							]
 						}
 					]
 				},
@@ -643,12 +594,10 @@
 						{
 							"cinemaId": 0,
 							"locationName": "Shimanto Shambhar, Dhanmondi 2",
-							"showTimes": {
-								"showTimes": [
-									"12:50 PM",
-									"06:50 PM"
-								]
-							}
+							"showTimes": [
+								"11:20 AM",
+								"04:45 PM"
+							]
 						}
 					]
 				},
@@ -658,16 +607,431 @@
 						{
 							"cinemaId": 0,
 							"locationName": "Shimanto Shambhar, Dhanmondi 2",
-							"showTimes": {
-								"showTimes": [
-									"12:50 PM",
-									"06:50 PM"
-								]
-							}
+							"showTimes": [
+								"11:20 AM",
+								"04:45 PM"
+							]
 						}
 					]
 				}
-			]
+			],
+			"imageUrl": ""
+		},
+		{
+			"name": "John Wick:Chapter 3-Parabellum",
+			"mediaType": "2D",
+			"schedule": [
+				{
+					"date": "Tuesday, June 18, 2019",
+					"playingAt": [
+						{
+							"cinemaId": 1,
+							"locationName": "On Theatre THRILL",
+							"showTimes": [
+								"11:40 am"
+							]
+						},
+						{
+							"cinemaId": 1,
+							"locationName": "On Theatre UTSHOB",
+							"showTimes": [
+								"2:55 pm"
+							]
+						}
+					]
+				}
+			],
+			"imageUrl": "https://image.blockbusterbd.net/00407.png"
+		},
+		{
+			"name": "Avengers: Endgame",
+			"mediaType": "3D",
+			"schedule": [
+				{
+					"date": "Tuesday, June 18, 2019",
+					"playingAt": [
+						{
+							"cinemaId": 1,
+							"locationName": "On Theatre UTSHOB",
+							"showTimes": [
+								"11:30 am",
+								"5:30 pm"
+							]
+						},
+						{
+							"cinemaId": 1,
+							"locationName": "On Theatre EXPOSURE",
+							"showTimes": [
+								"5:10 pm"
+							]
+						},
+						{
+							"cinemaId": 1,
+							"locationName": "On Theatre MONTAGE",
+							"showTimes": [
+								"2:05 pm",
+								"8:05 pm"
+							]
+						}
+					]
+				}
+			],
+			"imageUrl": "https://image.blockbusterbd.net/00404_main_image_24042019150155.png"
+		},
+		{
+			"name": "Godzilla: King of the Monsters",
+			"mediaType": "3D",
+			"schedule": [
+				{
+					"date": "Tuesday, June 18, 2019",
+					"playingAt": [
+						{
+							"cinemaId": 1,
+							"locationName": "On Theatre EXPOSURE",
+							"showTimes": [
+								"12:00 pm",
+								"2:35 pm",
+								"8:35 pm"
+							]
+						},
+						{
+							"cinemaId": 1,
+							"locationName": "On Theatre MONTAGE",
+							"showTimes": [
+								"11:30 am",
+								"5:30 pm"
+							]
+						}
+					]
+				}
+			],
+			"imageUrl": "https://image.blockbusterbd.net/000407.jpeg"
+		},
+		{
+			"name": "PASSWORD",
+			"mediaType": "2D",
+			"schedule": [
+				{
+					"date": "Tuesday, June 18, 2019",
+					"playingAt": [
+						{
+							"cinemaId": 1,
+							"locationName": "On Theatre IRIS",
+							"showTimes": [
+								"11:30 am",
+								"2:20 pm",
+								"5:10 pm",
+								"7:55 pm"
+							]
+						}
+					]
+				}
+			],
+			"imageUrl": "https://image.blockbusterbd.net/00411_main_image_08062019123741.jpg"
+		},
+		{
+			"name": "NOLOK",
+			"mediaType": "2D",
+			"schedule": [
+				{
+					"date": "Tuesday, June 18, 2019",
+					"playingAt": [
+						{
+							"cinemaId": 1,
+							"locationName": "On Theatre THRILL",
+							"showTimes": [
+								"2:10 pm",
+								"7:40 pm"
+							]
+						}
+					]
+				}
+			],
+			"imageUrl": "https://image.blockbusterbd.net/00410_main_image_09062019104734.jpg"
+		},
+		{
+			"name": "X MEN : DARK PHOENIX",
+			"mediaType": "2D",
+			"schedule": [
+				{
+					"date": "Tuesday, June 18, 2019",
+					"playingAt": [
+						{
+							"cinemaId": 1,
+							"locationName": "On Theatre CLUB ROYALE",
+							"showTimes": [
+								"12:30 pm",
+								"5:30 pm"
+							]
+						},
+						{
+							"cinemaId": 1,
+							"locationName": "On Theatre UTSHOB",
+							"showTimes": [
+								"8:55 pm"
+							]
+						}
+					]
+				}
+			],
+			"imageUrl": "https://image.blockbusterbd.net/00413_main_image_08062019153102.jpg"
+		},
+		{
+			"name": "ABAR BASHONTO",
+			"mediaType": "2D",
+			"schedule": [
+				{
+					"date": "Tuesday, June 18, 2019",
+					"playingAt": [
+						{
+							"cinemaId": 1,
+							"locationName": "On Theatre THRILL",
+							"showTimes": [
+								"5:10 pm"
+							]
+						}
+					]
+				}
+			],
+			"imageUrl": "https://image.blockbusterbd.net/00412_main_image_09062019104810.jpg"
+		},
+		{
+			"name": "Aladdin",
+			"mediaType": "3D",
+			"schedule": [
+				{
+					"date": "Tuesday, June 18, 2019",
+					"playingAt": [
+						{
+							"cinemaId": 1,
+							"locationName": "On Theatre CLUB ROYALE",
+							"showTimes": [
+								"2:50 pm",
+								"8:00 pm"
+							]
+						},
+						{
+							"cinemaId": 1,
+							"locationName": "On Theatre TRANSITION",
+							"showTimes": [
+								"11:30 am",
+								"2:15 pm",
+								"4:50 pm",
+								"7:30 pm"
+							]
+						}
+					]
+				}
+			],
+			"imageUrl": "https://image.blockbusterbd.net/00408.png"
+		},
+		{
+			"name": "John Wick:Chapter 3-Parabellum",
+			"mediaType": "2D",
+			"schedule": [
+				{
+					"date": "Thursday, June 20, 2019",
+					"playingAt": [
+						{
+							"cinemaId": 1,
+							"locationName": "On Theatre THRILL",
+							"showTimes": [
+								"11:40 am"
+							]
+						},
+						{
+							"cinemaId": 1,
+							"locationName": "On Theatre UTSHOB",
+							"showTimes": [
+								"2:55 pm"
+							]
+						}
+					]
+				}
+			],
+			"imageUrl": "https://image.blockbusterbd.net/00407.png"
+		},
+		{
+			"name": "Avengers: Endgame",
+			"mediaType": "3D",
+			"schedule": [
+				{
+					"date": "Thursday, June 20, 2019",
+					"playingAt": [
+						{
+							"cinemaId": 1,
+							"locationName": "On Theatre UTSHOB",
+							"showTimes": [
+								"11:30 am",
+								"5:30 pm"
+							]
+						},
+						{
+							"cinemaId": 1,
+							"locationName": "On Theatre EXPOSURE",
+							"showTimes": [
+								"5:10 pm"
+							]
+						},
+						{
+							"cinemaId": 1,
+							"locationName": "On Theatre MONTAGE",
+							"showTimes": [
+								"2:05 pm",
+								"8:05 pm"
+							]
+						}
+					]
+				}
+			],
+			"imageUrl": "https://image.blockbusterbd.net/00404_main_image_24042019150155.png"
+		},
+		{
+			"name": "Godzilla: King of the Monsters",
+			"mediaType": "3D",
+			"schedule": [
+				{
+					"date": "Thursday, June 20, 2019",
+					"playingAt": [
+						{
+							"cinemaId": 1,
+							"locationName": "On Theatre EXPOSURE",
+							"showTimes": [
+								"12:00 pm",
+								"2:35 pm",
+								"8:35 pm"
+							]
+						},
+						{
+							"cinemaId": 1,
+							"locationName": "On Theatre MONTAGE",
+							"showTimes": [
+								"11:30 am",
+								"5:30 pm"
+							]
+						}
+					]
+				}
+			],
+			"imageUrl": "https://image.blockbusterbd.net/000407.jpeg"
+		},
+		{
+			"name": "PASSWORD",
+			"mediaType": "2D",
+			"schedule": [
+				{
+					"date": "Thursday, June 20, 2019",
+					"playingAt": [
+						{
+							"cinemaId": 1,
+							"locationName": "On Theatre IRIS",
+							"showTimes": [
+								"11:30 am",
+								"2:20 pm",
+								"5:10 pm",
+								"7:55 pm"
+							]
+						}
+					]
+				}
+			],
+			"imageUrl": "https://image.blockbusterbd.net/00411_main_image_08062019123741.jpg"
+		},
+		{
+			"name": "NOLOK",
+			"mediaType": "2D",
+			"schedule": [
+				{
+					"date": "Thursday, June 20, 2019",
+					"playingAt": [
+						{
+							"cinemaId": 1,
+							"locationName": "On Theatre THRILL",
+							"showTimes": [
+								"2:10 pm",
+								"7:40 pm"
+							]
+						}
+					]
+				}
+			],
+			"imageUrl": "https://image.blockbusterbd.net/00410_main_image_09062019104734.jpg"
+		},
+		{
+			"name": "X MEN : DARK PHOENIX",
+			"mediaType": "2D",
+			"schedule": [
+				{
+					"date": "Thursday, June 20, 2019",
+					"playingAt": [
+						{
+							"cinemaId": 1,
+							"locationName": "On Theatre CLUB ROYALE",
+							"showTimes": [
+								"12:30 pm",
+								"5:30 pm"
+							]
+						},
+						{
+							"cinemaId": 1,
+							"locationName": "On Theatre UTSHOB",
+							"showTimes": [
+								"8:55 pm"
+							]
+						}
+					]
+				}
+			],
+			"imageUrl": "https://image.blockbusterbd.net/00413_main_image_08062019153102.jpg"
+		},
+		{
+			"name": "ABAR BASHONTO",
+			"mediaType": "2D",
+			"schedule": [
+				{
+					"date": "Thursday, June 20, 2019",
+					"playingAt": [
+						{
+							"cinemaId": 1,
+							"locationName": "On Theatre THRILL",
+							"showTimes": [
+								"5:10 pm"
+							]
+						}
+					]
+				}
+			],
+			"imageUrl": "https://image.blockbusterbd.net/00412_main_image_09062019104810.jpg"
+		},
+		{
+			"name": "Aladdin",
+			"mediaType": "3D",
+			"schedule": [
+				{
+					"date": "Thursday, June 20, 2019",
+					"playingAt": [
+						{
+							"cinemaId": 1,
+							"locationName": "On Theatre CLUB ROYALE",
+							"showTimes": [
+								"2:50 pm",
+								"8:00 pm"
+							]
+						},
+						{
+							"cinemaId": 1,
+							"locationName": "On Theatre TRANSITION",
+							"showTimes": [
+								"11:30 am",
+								"2:15 pm",
+								"4:50 pm",
+								"7:30 pm"
+							]
+						}
+					]
+				}
+			],
+			"imageUrl": "https://image.blockbusterbd.net/00408.png"
 		}
 	]
 }
