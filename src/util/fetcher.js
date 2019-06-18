@@ -23,6 +23,7 @@ const fetchStarCineplexScheduleByLocationId = async (locationId) => {
 };
 
 module.exports = {
+  locations,
   fetchAllSchedule,
   fetchScheduleByCinemaId,
   fetchStarCineplexScheduleByLocationId,
