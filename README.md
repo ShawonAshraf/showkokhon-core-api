@@ -36,6 +36,12 @@ yarn run watch
 - Navigate to `http://localhost:3000/core/v1/` which is the API root.
 - Use the client of your choice to make requests.
 
+### CronJob
+This API will automatically call ping the scraper service every 2 hours to update the database.
+If you're running the `scraper service ` somewhere other than your local machine, make sure to
+update that either in `config.json` (which is a bad things since the file is under version control) or (the best way)
+pass the API endpoint as an env variable.
+
 ## API
 
 ### GET /schedule/all
