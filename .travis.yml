@@ -1,6 +1,5 @@
 image: node:latest
 
 script:
-  - gem install dpl
-  - dpl --provider=heroku --app=$DPL_APP_NAME --api-key=$DPL_TOKEN
+  - yarn run travis-test
 
