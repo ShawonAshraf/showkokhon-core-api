@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 
 const schedule = require('./routes/schedule');
+const admin = require('./routes/admin');
 
 require('./config/config');
 require('./db/db');
@@ -24,6 +25,7 @@ app.use(cors());
 
 // routers
 app.use('/core/v1/schedule', schedule);
+app.use('/admin', admin);
 
 // index
 app.get('/', (req, res) => {
@@ -41,6 +43,7 @@ app.get('/core/v1/', (req, res) => {
     sentAt: Date(),
   });
 });
+
 
 app.listen(port, async () => {
   console.log(`server running @ ${port}`);

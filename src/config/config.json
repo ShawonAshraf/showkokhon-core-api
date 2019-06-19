@@ -1,10 +1,14 @@
 {
   "test": {
     "MONGODB_URI": "mongodb://localhost:27017/ShowKokhonTest",
-    "API_END": "http://localhost:8080/scraper/v1/schedule/all"
+    "API_END": "http://localhost:8080/scraper/v1/schedule/all",
+    "ADMIN_EMAIL_ADDRESS": "someuser@showkokhon.com",
+    "ADMIN_PASS": "test"
   },
   "development": {
     "MONGODB_URI": "mongodb://localhost:27017/ShowKokhonDev",
-    "API_END": "http://localhost:8080/scraper/v1/schedule/all"
+    "API_END": "http://localhost:8080/scraper/v1/schedule/all",
+    "ADMIN_EMAIL_ADDRESS": "someuser@showkokhon.com",
+    "ADMIN_PASS": "dev"
   }
 }
