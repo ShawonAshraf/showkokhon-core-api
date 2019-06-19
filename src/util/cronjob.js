@@ -6,7 +6,7 @@ const { sendStatusReportEmail } = require('./mailer');
 // production usage only
 
 if (process.env.NODE_ENV !== 'test' || process.env.NODE_ENV !== 'development') {
-  cron.schedule('0 */2 * * *', async () => {
+  cron.schedule('0 */4 * * *', async () => {
     console.log(`CronJob @ ${new Date()}`);
 
     try {
