@@ -5,7 +5,8 @@ const app = require('../src/app');
 
 const {
   populate,
-  count
+  count,
+  generateFakeAdminData,
 } = require('./seed');
 
 // pre hook
@@ -21,6 +22,21 @@ describe('GET /', () => {
 
         expect(msg).toBe('Showkokohon-Core-API');
         expect(sentAt).toExist();
+        done();
+      })
+      .catch(e => done(e));
+  });
+});
+
+describe('POST /admin', () => {
+  it('should reject fake user', (done) => {
+    const fake = generateFakeAdminData();
+
+    request(app)
+      .post('/admin/populate')
+      .send(fake)
+      .expect(404)
+      .expect(() => {
         done();
       })
       .catch(e => done(e));

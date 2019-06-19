@@ -20,7 +20,17 @@ const populate = (done) => {
 
 const count = () => movies.length;
 
+const generateFakeAdminData = () => {
+  const fake = {
+    name: '',
+    pass: '',
+  };
+
+  return fake;
+};
+
 module.exports = {
   populate,
-  count
+  count,
+  generateFakeAdminData,
 };
