@@ -2,7 +2,7 @@ const mailer = require('nodemailer');
 
 // use only in production!
 
-const sendStatusReportEmail = async () => {
+const sendStatusReportEmail = async (status) => {
   const transporter = mailer.createTransport({
     service: process.env.MAIL_SERVICE,
     auth: {
@@ -15,7 +15,7 @@ const sendStatusReportEmail = async () => {
     from: process.env.EMAIL_ADDRESS,
     to: process.env.EMAIL_TO,
     subject: `Showkokhon DB Update ${new Date()}`,
-    text: `Database was updated by cron job @ ${new Date()}`,
+    text: status,
   };
 
 
