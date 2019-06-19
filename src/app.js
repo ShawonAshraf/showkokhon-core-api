@@ -13,7 +13,9 @@ require('./db/db');
 // cron job
 require('./util/cronjob');
 
-const port = process.env.PORT || 3000;
+// support for deploying on openshift as well!
+const port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 3000;
+const ip = process.env.IP || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
 
 const app = express();
 
@@ -45,8 +47,8 @@ app.get('/core/v1/', (req, res) => {
 });
 
 
-app.listen(port, async () => {
-  console.log(`server running @ ${port}`);
+app.listen(port, ip, async () => {
+  console.log(`server running @ ${port} @ ${ip}`);
 });
 
 module.exports = app;
