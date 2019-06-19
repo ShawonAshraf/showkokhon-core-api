@@ -3,8 +3,9 @@ const cron = require('node-cron');
 const { populateDb } = require('./populator');
 const { sendStatusReportEmail } = require('./mailer');
 
+// production usage only
 
-if (process.env.NODE_ENV !== 'test') {
+if (process.env.NODE_ENV !== 'test' || process.env.NODE_ENV !== 'development') {
   cron.schedule('0 */2 * * *', async () => {
     console.log(`CronJob @ ${new Date()}`);
 
