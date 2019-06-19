@@ -5,6 +5,12 @@ const MovieSchema = new mongoose.Schema({
   name: {
     type: 'String',
   },
+  mediaType: {
+    type: 'String',
+  },
+  imageUrl: {
+    type: 'String',
+  },
   schedule: {
     type: [
       'Mixed',

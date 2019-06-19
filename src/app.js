@@ -4,7 +4,6 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 
 const schedule = require('./routes/schedule');
-const { populateDb } = require('./util/populator');
 
 require('./config/config');
 require('./db/db');
