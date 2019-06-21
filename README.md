@@ -37,7 +37,7 @@ yarn run watch
 - Use the client of your choice to make requests.
 
 ### CronJob
-This API will automatically call ping the scraper service every 2 hours to update the database.
+This API will automatically call ping the scraper service every 30 minutes to update the database.
 If you're running the `scraper service ` somewhere other than your local machine, make sure to
 update that either in `config.json` (which is a bad things since the file is under version control) or (the best way)
 pass the API endpoint as an env variable.
