@@ -47,6 +47,7 @@ app.get('/core/v1/', (req, res) => {
 
 
 app.listen(port, async () => {
+  // eslint-disable-next-line no-console
   console.log(`server running @ ${port}`);
 });
 
