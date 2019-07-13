@@ -36,12 +36,12 @@ describe('fetcher.js', () => {
   });
 
   it('should return star cineplex schedule by location id', (done) => {
-    fetchStarCineplexScheduleByLocationId(1)
+    fetchStarCineplexScheduleByLocationId(0)
       .then((docs) => {
         const { schedule } = docs[0];
         const { locationName } = schedule[0].playingAt[0];
 
-        expect(locationName).toBe(locations[1]);
+        expect(locationName).toBe(locations[0]);
         done();
       })
       .catch(e => done(e));
