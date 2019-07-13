@@ -22,9 +22,16 @@ const fetchStarCineplexScheduleByLocationId = async (locationId) => {
   return docs;
 };
 
+const fetchNowPlayingMovieInfo = async () => {
+  // send name, mediaType and imageURL
+  const docs = await Movie.distinct('name');
+  return docs;
+};
+
 module.exports = {
   locations,
   fetchAllSchedule,
   fetchScheduleByCinemaId,
   fetchStarCineplexScheduleByLocationId,
+  fetchNowPlayingMovieInfo,
 };

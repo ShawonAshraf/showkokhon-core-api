@@ -111,4 +111,16 @@ describe('GET /core/v1/schedule/', () => {
       })
       .catch(e => done(e));
   });
+
+  it('should get now playing movie names', (done) => {
+    request(app)
+      .get('/core/v1/schedule/nowplaying')
+      .expect(200)
+      .expect((res) => {
+        const { nowPlaying } = res.body;
+        expect(nowPlaying.length).toBeLessThanOrEqualTo(count() + 1);
+        done();
+      })
+      .catch(e => done(e));
+  });
 });
