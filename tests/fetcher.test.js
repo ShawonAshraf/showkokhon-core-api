@@ -6,6 +6,7 @@ const {
   fetchScheduleByCinemaId,
   fetchStarCineplexScheduleByLocationId,
   fetchNowPlayingMovieInfo,
+  fetchScheduleByMovieName,
 } = require('../src/util/fetcher');
 
 const {
@@ -51,6 +52,15 @@ describe('fetcher.js', () => {
     fetchNowPlayingMovieInfo()
       .then((nowPlaying) => {
         expect(nowPlaying.length).toBeLessThanOrEqualTo(count() + 1);
+        done();
+      })
+      .catch(e => done(e));
+  });
+
+  it('should return schedule by movie name', (done) => {
+    fetchScheduleByMovieName('Anna')
+      .then((schedule) => {
+        expect(schedule).toExist();
         done();
       })
       .catch(e => done(e));
