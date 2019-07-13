@@ -123,4 +123,16 @@ describe('GET /core/v1/schedule/', () => {
       })
       .catch(e => done(e));
   });
+
+  it('should get schedule by movie name', (done) => {
+    request(app)
+      .get('/core/v1/schedule/byname?name=Anna')
+      .expect(200)
+      .expect((res) => {
+        const { body } = res;
+        expect(body[0].name).toEqual('Anna');
+        done();
+      })
+      .catch(e => done(e));
+  });
 });

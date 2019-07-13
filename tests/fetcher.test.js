@@ -5,11 +5,11 @@ const {
   fetchAllSchedule,
   fetchScheduleByCinemaId,
   fetchStarCineplexScheduleByLocationId,
+  fetchNowPlayingMovieInfo,
 } = require('../src/util/fetcher');
 
 const {
-  populate,
-  count
+  count,
 } = require('./seed');
 
 
@@ -42,6 +42,15 @@ describe('fetcher.js', () => {
         const { locationName } = schedule[0].playingAt[0];
 
         expect(locationName).toBe(locations[0]);
+        done();
+      })
+      .catch(e => done(e));
+  });
+
+  it('should return a lits of now playing movie names', (done) => {
+    fetchNowPlayingMovieInfo()
+      .then((nowPlaying) => {
+        expect(nowPlaying.length).toBeLessThanOrEqualTo(count() + 1);
         done();
       })
       .catch(e => done(e));
