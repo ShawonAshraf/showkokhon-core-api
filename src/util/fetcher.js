@@ -23,7 +23,17 @@ const fetchStarCineplexScheduleByLocationId = async (locationId) => {
 };
 
 const fetchNowPlayingMovieInfo = async () => {
-  const docs = await Movie.distinct('name');
+  const docs = await Movie.aggregate([
+    {
+      $group: {
+        _id: {
+          name: '$name',
+          imageUrl: '$imageUrl',
+        },
+      },
+    },
+  ]);
+
   return docs;
 };
 

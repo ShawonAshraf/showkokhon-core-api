@@ -48,7 +48,7 @@ describe('fetcher.js', () => {
       .catch(e => done(e));
   });
 
-  it('should return a lits of now playing movie names', (done) => {
+  it('should return a lists of now playing movie objects', (done) => {
     fetchNowPlayingMovieInfo()
       .then((nowPlaying) => {
         expect(nowPlaying.length).toBeLessThanOrEqualTo(count() + 1);
