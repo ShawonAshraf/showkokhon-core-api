@@ -1,6 +1,7 @@
 const express = require('express');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 
 const schedule = require('./routes/schedule');
 const admin = require('./routes/admin');
@@ -20,6 +21,7 @@ const app = express();
 // add middlewares
 app.use(bodyParser.json());
 app.use(morgan('combined'));
+app.use(cors({}));
 
 // routers
 app.use('/core/v1/schedule', schedule);
