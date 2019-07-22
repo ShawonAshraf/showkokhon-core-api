@@ -1,5 +1,5 @@
 # showkokhon-core-api
-[![Build Status](https://travis-ci.com/ShawonAshraf/showkokhon-core-api.svg?branch=master)](https://travis-ci.com/ShawonAshraf/showkokhon-core-api) [![DeepScan grade](https://deepscan.io/api/teams/4763/projects/6517/branches/54712/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=4763&pid=6517&bid=54712)
+[![Build Status](https://travis-ci.com/ShawonAshraf/showkokhon-core-api.svg?branch=master)](https://travis-ci.com/ShawonAshraf/showkokhon-core-api) [![DeepScan grade](https://deepscan.io/api/teams/4763/projects/6517/branches/54712/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=4763&pid=6517&bid=54712) [![CodeFactor](https://www.codefactor.io/repository/github/shawonashraf/showkokhon-scraper-api/badge)](https://www.codefactor.io/repository/github/shawonashraf/showkokhon-scraper-api)
 
 Core API for ShowKokhon Service.
 
