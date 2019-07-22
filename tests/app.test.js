@@ -10,8 +10,10 @@ const {
 } = require('./seed');
 
 // pre hook
+// eslint-disable-next-line no-undef
 before(populate);
 
+// eslint-disable-next-line no-undef
 describe('GET /', () => {
   it('server should message', (done) => {
     request(app)
@@ -28,6 +30,7 @@ describe('GET /', () => {
   });
 });
 
+// eslint-disable-next-line no-undef
 describe('POST /admin', () => {
   it('should reject fake user', (done) => {
     const fake = generateFakeAdminData();
@@ -43,6 +46,7 @@ describe('POST /admin', () => {
   });
 });
 
+// eslint-disable-next-line no-undef
 describe('GET /core/v1', () => {
   it('should return api version v1', (done) => {
     request(app)
@@ -57,7 +61,9 @@ describe('GET /core/v1', () => {
   });
 });
 
+// eslint-disable-next-line no-undef
 describe('GET /core/v1/schedule/', () => {
+  // eslint-disable-next-line no-undef
   it('should fetch all movies', (done) => {
     request(app)
       .get('/core/v1/schedule/all')
@@ -69,7 +75,7 @@ describe('GET /core/v1/schedule/', () => {
       })
       .catch(e => done(e));
   });
-
+  // eslint-disable-next-line no-undef
   it('should get star cineplex schedule by cinemaId', (done) => {
     request(app)
       .get('/core/v1/schedule/cinema/0')
@@ -83,7 +89,7 @@ describe('GET /core/v1/schedule/', () => {
       })
       .catch(e => done(e));
   });
-
+  // eslint-disable-next-line no-undef
   it('should get blockbuster cinemas schedule by cinemaId', (done) => {
     request(app)
       .get('/core/v1/schedule/cinema/1')
@@ -97,7 +103,7 @@ describe('GET /core/v1/schedule/', () => {
       })
       .catch(e => done(e));
   });
-
+  // eslint-disable-next-line no-undef
   it('should get schedule by locationId', (done) => {
     request(app)
       .get('/core/v1/schedule/cinema/0/location/0')
@@ -111,7 +117,7 @@ describe('GET /core/v1/schedule/', () => {
       })
       .catch(e => done(e));
   });
-
+  // eslint-disable-next-line no-undef
   it('should get now playing movie names', (done) => {
     request(app)
       .get('/core/v1/schedule/nowplaying')
@@ -123,7 +129,7 @@ describe('GET /core/v1/schedule/', () => {
       })
       .catch(e => done(e));
   });
-
+  // eslint-disable-next-line no-undef
   it('should get schedule by movie name', (done) => {
     request(app)
       .get('/core/v1/schedule/byname?name=Anna')

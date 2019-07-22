@@ -40,7 +40,7 @@ const fetchNowPlayingMovieInfo = async () => {
 const fetchScheduleByMovieName = async (movieName) => {
   const docs = await Movie.find({ name: movieName });
   return docs;
-}
+};
 
 module.exports = {
   locations,
