@@ -21,7 +21,27 @@ const app = express();
 // add middlewares
 app.use(bodyParser.json());
 app.use(morgan('combined'));
-app.use(cors({}));
+
+// configure CORS
+const allowedOrigins = [
+  process.env.REQ_ORIGIN_WEBSITE,
+];
+app.use(cors({
+  origin: (origin, callback) => {
+    // allowing mobile apps or curl
+    if (!origin) {
+      return callback(null, true);
+    }
+    // error!
+    if (allowedOrigins.indexOf(origin) === -1) {
+      const err = new Error('CORS:: Origin rejected');
+      return callback(err, false);
+    }
+
+    // trusted origin only for xhr
+    return callback(null, true);
+  },
+}));
 
 // routers
 app.use('/core/v1/schedule', schedule);
