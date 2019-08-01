@@ -4,7 +4,7 @@ const { populateDb } = require('./populator');
 
 // production usage only
 if (process.env.NODE_ENV === 'prod') {
-  cron.schedule('* */4 * * *', async () => {
+  cron.schedule('0 0 */4 * * *', async () => {
     // eslint-disable-next-line no-console
     console.log(`CronJob @ ${new Date()}`);
 
