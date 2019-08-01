@@ -51,7 +51,7 @@ app.use('/admin', admin);
 app.get('/', (req, res) => {
   res.status(200).send({
     msg: 'Showkokohon-Core-API',
-    sentAt: Date(),
+    sentAt: new Date().toISOString(),
   });
 });
 
@@ -60,7 +60,7 @@ app.get('/core/v1/', (req, res) => {
   res.status(200).send({
     msg: 'Showkokohon-Core-API',
     version: 'v1',
-    sentAt: Date(),
+    sentAt: new Date().toISOString(),
   });
 });
 
