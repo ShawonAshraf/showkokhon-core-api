@@ -15,9 +15,13 @@ const scheduleRouter = express.Router();
 scheduleRouter.get('/all', async (req, res) => {
   try {
     const schedule = await fetchAllSchedule();
-    res.send(schedule);
+    if (schedule.length !== 0) {
+      res.status(200).send(schedule);
+    } else {
+      res.status(404).send(schedule);
+    }
   } catch (e) {
-    res.send({ error: e });
+    res.status(500).send({ error: e });
   }
 });
 
@@ -29,7 +33,7 @@ scheduleRouter.get('/cinema/:cinemaId', async (req, res) => {
     const { cinemaId } = req.params;
     const schedule = await fetchScheduleByCinemaId(cinemaId);
 
-    if (schedule) {
+    if (schedule.length !== 0) {
       res.status(200).send(schedule);
     } else {
       res.status(404).send(schedule);
@@ -52,7 +56,7 @@ scheduleRouter.get('/cinema/:cinemaId/location/:locationId', async (req, res) =>
     }
     const schedule = await fetchStarCineplexScheduleByLocationId(locationId);
 
-    if (schedule) {
+    if (schedule.length !== 0) {
       res.status(200).send(schedule);
     } else {
       res.status(404).send(schedule);
@@ -66,7 +70,7 @@ scheduleRouter.get('/cinema/:cinemaId/location/:locationId', async (req, res) =>
 scheduleRouter.get('/nowplaying', async (req, res) => {
   try {
     const nowPlaying = await fetchNowPlayingMovieInfo();
-    if (nowPlaying) {
+    if (nowPlaying.length !== 0) {
       res.status(200).send({ nowPlaying });
     } else {
       res.status(404).send({ nowPlaying });
@@ -82,7 +86,7 @@ scheduleRouter.get('/byname', async (req, res) => {
     const { name } = req.query;
     const schedule = await fetchScheduleByMovieName(name);
 
-    if (schedule) {
+    if (schedule.length !== 0) {
       res.status(200).send(schedule);
     } else {
       res.status(404).send(schedule);

@@ -141,4 +141,16 @@ describe('GET /core/v1/schedule/', () => {
       })
       .catch(e => done(e));
   });
+  // eslint-disable-next-line no-undef
+  it('should send 404 for wrong query', (done) => {
+    request(app)
+      .get('/core/v1/schedule/byname?name=Lellll')
+      .expect(404)
+      .expect((res) => {
+        const { body } = res;
+        expect(body.length).toEqual(0);
+        done();
+      })
+      .catch(e => done(e));
+  });
 });
