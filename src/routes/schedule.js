@@ -29,9 +29,13 @@ scheduleRouter.get('/cinema/:cinemaId', async (req, res) => {
     const { cinemaId } = req.params;
     const schedule = await fetchScheduleByCinemaId(cinemaId);
 
-    res.send(schedule);
+    if (schedule) {
+      res.status(200).send(schedule);
+    } else {
+      res.status(404).send(schedule);
+    }
   } catch (e) {
-    res.send({ error: e });
+    res.status(500).send({ error: e });
   }
 });
 
@@ -48,9 +52,13 @@ scheduleRouter.get('/cinema/:cinemaId/location/:locationId', async (req, res) =>
     }
     const schedule = await fetchStarCineplexScheduleByLocationId(locationId);
 
-    res.send(schedule);
+    if (schedule) {
+      res.status(200).send(schedule);
+    } else {
+      res.status(404).send(schedule);
+    }
   } catch (e) {
-    res.send({ error: e });
+    res.status(500).send({ error: e });
   }
 });
 
@@ -58,9 +66,13 @@ scheduleRouter.get('/cinema/:cinemaId/location/:locationId', async (req, res) =>
 scheduleRouter.get('/nowplaying', async (req, res) => {
   try {
     const nowPlaying = await fetchNowPlayingMovieInfo();
-    res.send({ nowPlaying });
+    if (nowPlaying) {
+      res.status(200).send({ nowPlaying });
+    } else {
+      res.status(404).send({ nowPlaying });
+    }
   } catch (e) {
-    res.send({ error: e });
+    res.status(500).send({ error: e });
   }
 });
 
@@ -69,7 +81,12 @@ scheduleRouter.get('/byname', async (req, res) => {
   try {
     const { name } = req.query;
     const schedule = await fetchScheduleByMovieName(name);
-    res.send(schedule);
+
+    if (schedule) {
+      res.status(200).send(schedule);
+    } else {
+      res.status(404).send(schedule);
+    }
   } catch (e) {
     res.send({ error: e });
   }
