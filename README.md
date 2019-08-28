@@ -86,7 +86,7 @@ _Example Response_:
 Fetches schedule by moviename
 
 _Example_:
-Use the `name` query.
+Use the `name` query. Encode name while sending requests from a client. => `encodeURIComponent(name)`.
 
 ```bash
 # request url
@@ -118,6 +118,45 @@ http://localhost:3000/core/v1/schedule/byname?name=Anna
         "__v": 0
     }
 ]
+```
+
+### GET /status/db
+Returns the last time the database was updated.
+
+```json
+[
+  {
+    "_id":"5d663e90d5b561365073686d","last_updated":"2019-08-28T08:42:45.541Z",
+    "__v":0
+  }
+]
+```
+
+### GET /status/service
+Service status.
+
+```json
+{
+  "status": "OK"
+}
+```
+
+### POST /admin/populate
+Force populate the database.
+
+_Request Body for dev env_
+```json
+{
+	"email": "someuser@showkokhon.com",
+	"pass": "dev"
+}
+```
+_Response_
+```json
+{
+  "status": "Scraped and Updated Database",
+  "sent_at": "2019-08-28T08:42:45.541Z"
+}
 ```
 
 ## License

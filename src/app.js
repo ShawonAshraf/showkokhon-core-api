@@ -5,6 +5,7 @@ const cors = require('cors');
 
 const schedule = require('./routes/schedule');
 const admin = require('./routes/admin');
+const dbStatus = require('./routes/status');
 
 require('./config/config');
 require('./db/db');
@@ -46,6 +47,7 @@ app.use(cors({
 // routers
 app.use('/core/v1/schedule', schedule);
 app.use('/admin', admin);
+app.use('/status', dbStatus);
 
 // index
 app.get('/', (req, res) => {
