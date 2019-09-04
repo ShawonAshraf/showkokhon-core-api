@@ -29,7 +29,6 @@ const fetchNowPlayingMovieInfo = async () => {
         _id: {
           name: '$name',
           imageUrl: '$imageUrl',
-          id: '$_id',
         },
       },
     },
