@@ -13,7 +13,9 @@ statusRouter.get('/db', async (req, res) => {
       code = 404;
     }
 
-    res.status(code).send(dbStatus);
+    // eslint-disable-next-line camelcase
+    const { last_updated } = dbStatus[0];
+    res.status(code).send({ last_updated });
   } catch (e) {
     res.status(e.response.status).send(e);
   }

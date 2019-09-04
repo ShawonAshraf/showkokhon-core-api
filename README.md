@@ -124,12 +124,9 @@ http://localhost:3000/core/v1/schedule/byname?name=Anna
 Returns the last time the database was updated.
 
 ```json
-[
-  {
-    "_id":"5d663e90d5b561365073686d","last_updated":"2019-08-28T08:42:45.541Z",
-    "__v":0
-  }
-]
+{
+  "last_updated": "2019-09-04T19:36:28.865Z"
+}
 ```
 
 ### GET /status/service
