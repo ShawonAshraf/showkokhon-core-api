@@ -120,6 +120,48 @@ http://localhost:3000/core/v1/schedule/byname?name=Anna
 ]
 ```
 
+### GET /schedule/byid
+Fetches schedule by movie id
+
+```bash
+# request url
+http://localhost:3000/core/v1/schedule/byid?id=5d70124e58fd4c2d0251de82
+```
+
+```json
+[
+  {
+    "schedule": [
+      {
+        "date": "Thursday, September 5, 2019",
+        "playingAt": [
+          {
+            "cinemaId": 1,
+            "locationName": "On Theatre THRILL",
+            "showTimes": [
+              "6:10 pm",
+              "8:10 pm"
+            ]
+          },
+          {
+            "cinemaId": 1,
+            "locationName": "On Theatre MONTAGE",
+            "showTimes": [
+              "12:00 pm"
+            ]
+          }
+        ]
+      }
+    ],
+    "_id": "5d70124e58fd4c2d0251de82",
+    "name": "Crawl",
+    "mediaType": "2D",
+    "imageUrl": "https://image.blockbusterbd.net/00419_main_image_08082019205155.jpg",
+    "__v": 0
+  }
+]
+```
+
 ### GET /status/db
 Returns the last time the database was updated.
 

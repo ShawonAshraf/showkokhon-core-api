@@ -29,6 +29,7 @@ const fetchNowPlayingMovieInfo = async () => {
         _id: {
           name: '$name',
           imageUrl: '$imageUrl',
+          id: '$_id',
         },
       },
     },
@@ -42,6 +43,11 @@ const fetchScheduleByMovieName = async (movieName) => {
   return docs;
 };
 
+const fetchScheduleByMovieId = async (id) => {
+  const docs = await Movie.find({ _id: id });
+  return docs;
+};
+
 module.exports = {
   locations,
   fetchAllSchedule,
@@ -49,4 +55,5 @@ module.exports = {
   fetchStarCineplexScheduleByLocationId,
   fetchNowPlayingMovieInfo,
   fetchScheduleByMovieName,
+  fetchScheduleByMovieId,
 };

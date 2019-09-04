@@ -6,6 +6,7 @@ const {
   fetchStarCineplexScheduleByLocationId,
   fetchNowPlayingMovieInfo,
   fetchScheduleByMovieName,
+  fetchScheduleByMovieId,
 } = require('./../util/fetcher');
 
 // init router
@@ -85,6 +86,21 @@ scheduleRouter.get('/byname', async (req, res) => {
   try {
     const { name } = req.query;
     const schedule = await fetchScheduleByMovieName(name);
+
+    if (schedule.length !== 0) {
+      res.status(200).send(schedule);
+    } else {
+      res.status(404).send(schedule);
+    }
+  } catch (e) {
+    res.send({ error: e });
+  }
+});
+
+scheduleRouter.get('/byid', async (req, res) => {
+  try {
+    const { id } = req.query;
+    const schedule = await fetchScheduleByMovieId(id);
 
     if (schedule.length !== 0) {
       res.status(200).send(schedule);
