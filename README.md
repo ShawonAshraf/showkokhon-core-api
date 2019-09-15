@@ -67,18 +67,74 @@ Fetches names of movies now playing
 _Example Response_:
 ```json
 {
-  "nowPlaying": [
-    "Men in Black: International",
-    "Avengers: Endgame",
-    "Spider-Man: Far from Home",
-    "Kidnap",
-    "Annabelle Comes Home",
-    "Aladdin",
-    "Toy Story 4",
-    "Godzilla: King of the Monsters",
-    "PASSWORD",
-    "Anna"
-  ]
+    "nowPlaying": [
+        {
+            "_id": {
+                "name": "Panther",
+                "imageUrl": "https://image.blockbusterbd.net/00436_main_image_06092019102208.png"
+            }
+        },
+        {
+            "_id": {
+                "name": "Angel Has Fallen",
+                "imageUrl": "https://image.blockbusterbd.net/00438_main_image_05092019151316.png"
+            }
+        },
+        {
+            "_id": {
+                "name": "Abotar",
+                "imageUrl": "https://image.blockbusterbd.net/00439_main_image_10092019141007.png"
+            }
+        },
+        {
+            "_id": {
+                "name": "Fast & Furious Presents: Hobbs & Shaw",
+                "imageUrl": "https://image.blockbusterbd.net/00395_main_image_02042019140315.png"
+            }
+        },
+        {
+            "_id": {
+                "name": "Crawl",
+                "imageUrl": "https://image.blockbusterbd.net/00419_main_image_08082019205155.jpg"
+            }
+        },
+        {
+            "_id": {
+                "name": "Dora and the Lost City of Gold",
+                "imageUrl": "https://image.blockbusterbd.net/00418_main_image_08082019205313.jpg"
+            }
+        },
+        {
+            "_id": {
+                "name": "The Lion King",
+                "imageUrl": "https://image.blockbusterbd.net/00423_main_image_25072019172336.png"
+            }
+        },
+        {
+            "_id": {
+                "name": "Once Upon a Time in Hollywood",
+                "imageUrl": ""
+            }
+        },
+        {
+            "_id": {
+                "name": "Mayaboti",
+                "imageUrl": "https://image.blockbusterbd.net/00440_main_image_12092019173732.png"
+            }
+        },
+        {
+            "_id": {
+                "name": "It Chapter Two",
+                "imageUrl": "https://image.blockbusterbd.net/00437_main_image_05092019151356.png"
+            }
+        },
+        {
+            "_id": {
+                "name": "Spider-Man: Far from Home",
+                "imageUrl": "https://image.blockbusterbd.net/00416_main_image_04072019225805.png"
+            }
+        }
+    ]
 }
 ```
 
