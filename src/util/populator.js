@@ -2,6 +2,7 @@ const axios = require('axios');
 
 const Movie = require('../models/movie');
 const DBStatus = require('../models/db-status');
+const { encodeImageToBase64 } = require('./image-encoder');
 
 const populateDb = async () => {
   const currentTime = new Date();
@@ -17,8 +18,20 @@ const populateDb = async () => {
 
       // movie data
       schedules.forEach((element) => {
-        const entry = new Movie(element);
-        entry.save().then(movie => movie, err => err);
+        if (element.imageUrl !== '') {
+          encodeImageToBase64(element.imageUrl)
+            .then((el) => {
+              // eslint-disable-next-line no-param-reassign
+              element.imageData = el;
+              const entry = new Movie(element);
+              entry.save().then(movie => movie, err => err);
+            });
+        } else {
+          // eslint-disable-next-line no-param-reassign
+          element.imageData = '';
+          const entry = new Movie(element);
+          entry.save().then(movie => movie, err => err);
+        }
       });
 
       // db update status

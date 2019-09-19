@@ -11,6 +11,9 @@ const MovieSchema = new mongoose.Schema({
   imageUrl: {
     type: 'String',
   },
+  imageData: {
+    type: 'String',
+  },
   schedule: {
     type: [
       'Mixed',
