@@ -12,8 +12,14 @@ const base64EncodingFromURL = url => new Promise((resolve, reject) => {
 
 // just return the base64 data
 const encodeImageToBase64 = async (url) => {
-  const data = await base64EncodingFromURL(url);
-  return data;
+  try {
+    const data = await base64EncodingFromURL(url);
+    return data;
+  } catch (e) {
+    // in case of a malformed url or missing resource on the
+    // remote, return an empty string
+    return '';
+  }
 };
 module.exports = {
   encodeImageToBase64,
