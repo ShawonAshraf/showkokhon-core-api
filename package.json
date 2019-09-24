@@ -15,9 +15,9 @@
   },
   "scripts": {
     "start": "node src/app.js",
-    "watch": "export NODE_ENV=development && nodemon src/app.js",
-    "test": "export NODE_ENV=test && mocha ./**/*.test.js --exit",
-    "test-watch": "export NODE_ENV=test && nodemon --exec \"npm test\"",
+    "watch": "export NODE_ENV=development || SET \"NODE_ENV=development\" && nodemon src/app.js",
+    "test": "export NODE_ENV=test || SET \"NODE_ENV=test\" && mocha ./**/*.test.js --exit",
+    "test-watch": "export NODE_ENV=test || SET \"NODE_ENV=test\" && nodemon --exec \"npm test\"",
     "test-cd": "export NODE_ENV=travis && mocha ./**/*.test.js --exit"
   },
   "devDependencies": {
