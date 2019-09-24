@@ -1,6 +1,6 @@
 version: "2"
 services:
-  api:
+  core:
     environment:
       - API_END=${API_END}
       - ADMIN_EMAIL=${ADMIN_EMAIL}
