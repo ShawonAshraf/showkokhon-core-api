@@ -1,0 +1,17 @@
+version: "2"
+services:
+  api:
+    environment:
+      - API_END=${API_END}
+      - ADMIN_EMAIL=${ADMIN_EMAIL}
+      - ADMIN_PASS=${ADMIN_PASS}
+      - REQ_ORIGIN_WEBSITE=${REQ_ORIGIN_WEBSITE}
+    build: .
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
