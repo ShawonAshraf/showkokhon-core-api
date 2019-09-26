@@ -14,7 +14,6 @@ require('./db/db');
 // cron job
 require('./util/cronjob');
 
-// support for deploying on openshift as well!
 const port = process.env.PORT || 3000;
 
 const app = express();
