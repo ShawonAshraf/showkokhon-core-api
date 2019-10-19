@@ -3,6 +3,7 @@ const Movie = require('../models/movie');
 const locations = [
   'Bashundhara Shopping Mall, Panthapath',
   'Shimanto Shambhar, Dhanmondi 2',
+  'SKS Tower, Mohakhali',
 ];
 
 const fetchAllSchedule = async () => {
