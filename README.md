@@ -12,11 +12,17 @@ well. Just add a `config.json` file in `src/config` with the following propertie
 {
   "test": {
     "MONGODB_URI": "mongodb://localhost:27017/ShowKokhonTest",
-    "API_END": "http://localhost:8080/scraper/v1/schedule/all"
+    "API_END": "http://localhost:8080/scraper/v1/schedule/all",
+    "ADMIN_EMAIL_ADDRESS": "someuser@showkokhon.com",
+    "ADMIN_PASS": "test",
+    "REQ_ORIGIN_WEBSITE": "http://localhost:9090"
   },
   "development": {
     "MONGODB_URI": "mongodb://localhost:27017/ShowKokhonDev",
-    "API_END": "http://localhost:8080/scraper/v1/schedule/all"
+    "API_END": "http://localhost:8080/scraper/v1/schedule/all",
+    "ADMIN_EMAIL_ADDRESS": "someuser@showkokhon.com",
+    "ADMIN_PASS": "dev",
+    "REQ_ORIGIN_WEBSITE": "http://localhost:9090"
   }
 }
 ```
