@@ -1,5 +1,6 @@
 # showkokhon-core-api
 [![Build Status](https://travis-ci.com/ShawonAshraf/showkokhon-core-api.svg?branch=master)](https://travis-ci.com/ShawonAshraf/showkokhon-core-api) [![DeepScan grade](https://deepscan.io/api/teams/4763/projects/6517/branches/54712/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=4763&pid=6517&bid=54712) [![CodeFactor](https://www.codefactor.io/repository/github/shawonashraf/showkokhon-core-api/badge)](https://www.codefactor.io/repository/github/shawonashraf/showkokhon-core-api)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FShawonAshraf%2Fshowkokhon-core-api.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FShawonAshraf%2Fshowkokhon-core-api?ref=badge_shield)
 
 Core API for ShowKokhon Service.
 
@@ -262,3 +263,6 @@ _Response_
 
 ## License
 MIT
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FShawonAshraf%2Fshowkokhon-core-api.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FShawonAshraf%2Fshowkokhon-core-api?ref=badge_large)
