@@ -20,7 +20,7 @@
     "test-watch": "export NODE_ENV=test || SET \"NODE_ENV=test\" && nodemon --exec \"npm test\"",
     "test-cd": "export NODE_ENV=travis && mocha ./**/*.test.js --exit",
     "cov": "nyc yarn test",
-    "cov-cd": "nyc yarn test && nyc report --reporter=text-lcov > coverage.lcov && codecov"
+    "cov-cd": "nyc yarn test-cd && nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "devDependencies": {
     "codecov": "^3.6.1",
