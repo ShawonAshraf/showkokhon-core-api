@@ -48,6 +48,7 @@ describe('POST /admin', () => {
 
 // eslint-disable-next-line no-undef
 describe('GET /core/v1', () => {
+  // eslint-disable-next-line no-undef
   it('should return api version v1', (done) => {
     request(app)
       .get('/core/v1/')
@@ -149,6 +150,18 @@ describe('GET /core/v1/schedule/', () => {
       .expect((res) => {
         const { body } = res;
         expect(body.length).toEqual(0);
+        done();
+      })
+      .catch(e => done(e));
+  });
+
+  // eslint-disable-next-line no-undef
+  it('should send 200 for service status', (done) => {
+    request(app)
+      .get('/status/service')
+      .expect(200)
+      .expect((res) => {
+        expect(res.body.status).toEqual('OK');
         done();
       })
       .catch(e => done(e));
