@@ -3,5 +3,4 @@ node_js:
   - "10"
 
 script:
-  - yarn run test-cd
-
+  - yarn run cov-cd
