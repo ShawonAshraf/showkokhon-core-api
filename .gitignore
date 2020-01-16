@@ -186,4 +186,7 @@ modules.xml
 # Sonarlint plugin
 .idea/sonarlint
 
+# codecov
+coverage.lcov
+
 # End of https://www.gitignore.io/api/node,webstorm+all,visualstudiocode

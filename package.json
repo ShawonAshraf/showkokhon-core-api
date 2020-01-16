@@ -18,15 +18,18 @@
     "watch": "export NODE_ENV=development || SET \"NODE_ENV=development\" && nodemon src/app.js",
     "test": "export NODE_ENV=test || SET \"NODE_ENV=test\" && mocha ./**/*.test.js --exit",
     "test-watch": "export NODE_ENV=test || SET \"NODE_ENV=test\" && nodemon --exec \"npm test\"",
-    "test-cd": "export NODE_ENV=travis && mocha ./**/*.test.js --exit"
+    "test-cd": "export NODE_ENV=travis && mocha ./**/*.test.js --exit",
+    "cov": "nyc yarn test && nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "devDependencies": {
+    "codecov": "^3.6.1",
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.18.2",
     "expect": "1.20.2",
     "mocha": "^6.2.2",
     "nodemon": "^1.19.1",
+    "nyc": "^15.0.0",
     "supertest": "^4.0.2"
   }
 }
