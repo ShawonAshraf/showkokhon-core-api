@@ -10,7 +10,7 @@
     "express": "^4.17.1",
     "mongodb": "^3.3.1",
     "mongoose": "^5.9.1",
-    "morgan": "^1.9.1",
+    "morgan": "^1.10.0",
     "node-cron": "^2.0.3"
   },
   "scripts": {
