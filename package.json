@@ -9,7 +9,7 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongodb": "^3.3.1",
-    "mongoose": "^5.9.13",
+    "mongoose": "^5.9.17",
     "morgan": "^1.9.1",
     "node-cron": "^2.0.3"
   },
